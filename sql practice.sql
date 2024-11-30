@@ -96,8 +96,17 @@ Select count(*) from athletes;
 
 select * from Countries where Continent='Asia' or Continent='North America';
 
+select * from Countries where Continent not in ('Asia','North America');
 
+select * from Athletes where Gender='Male';
 
+select * from Athletes where FullName like'S%';
 
+select * from Athletes where FullName like 'M%';
 
+select * from Athletes where FullName like '%H';
 
+select a.* from Athletes a join Countries c on a.CountryId=c.countryId where c.Countrycode='USA';
+
+select *, floor(DateDiff(CurDate(),DateOfBirth/365)as Age From Athletes where floor(DateDiff(CurDate(),DateOfBirth)/365)<25;
+select * from Athletes where Date_Format(DateOfBirth,'%m-%d') Between Date_Format(CurDate(),'%m-%d') and Date_Format(CurDate()+Interval 7 Day,'%m-%d');
