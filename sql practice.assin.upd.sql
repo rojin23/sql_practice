@@ -161,6 +161,9 @@ update Medals set MedalType='Sliver' where MedalId=11;
 
 select * from Medals where MedalType='Gold';
 
+delete from Athletes order by AthleteId Desc Limit 4;
+
+select * from Athletes where AthleteId>5;
 
 
 
