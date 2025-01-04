@@ -1,5 +1,5 @@
 # (SQL)
-(Welcome to my SQL project repository  ,I have worked on various data management and smslysis task using SQL) one example 
+(Welcome to my SQL project repository  ,I have worked on various data management and analysis task using SQL) one example 
 
 # Library Database Schema
 
